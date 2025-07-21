@@ -1,9 +1,6 @@
 import styled from 'styled-components'
 
 const Opcao = styled.li`
-    display: flex;
-`
-const Opcoes = styled.ul`
     font-size: 16px;
     display: flex;
     justify-content: center;
@@ -13,6 +10,9 @@ const Opcoes = styled.ul`
     padding: 0 5px;
     cursor: pointer;
     min-width: 120px;
+`
+const Opcoes = styled.ul`
+    display: flex;
 `
 
 const textoOpcoes = ['CATEGORIAS', 'MINHA ESTANTE', 'FAVORITOS']
