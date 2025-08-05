@@ -5,7 +5,7 @@ import { livros } from './dadosPesquisa'
 
 
 const PesquisaContainer = styled.section`
-    background-image: linear-gradient (90deg, #002F52 35%, #326589 165%);
+    background-image: linear-gradient(90deg, #002F52 35%, #326589 165%);
     color: #ffffff;
     text-align: center;
     padding: 85px 0;
@@ -56,15 +56,19 @@ function Pesquisa() {
             <Subtitulo>Encontre seu livro em nossa estante.</Subtitulo>
             <Input
                 placeholder="Escreva sua próxima leitura"
-                onBlur={evento => {
-                    const textoDigitado = evento.target.value
-                    const resultadoPesquisa = livros.filter( livro => livro.nome.includes(textoDigitado))
-                    setLivrosPesquisados(resultadoPesquisa)
+                onBlur={(evento) => {
+                    const textoDigitado = evento.target.value.toLowerCase();
+                    if (textoDigitado) {
+                        const resultadoPesquisa = livros.filter(livro => livro.nome.toLowerCase().includes(textoDigitado));
+                        setLivrosPesquisados(resultadoPesquisa);
+                    } else {
+                        setLivrosPesquisados([]);
+                    }
                 }}
             />
-            { livrosPesquisados.map( livro => (
-                <Resultado>
-                    <img src={livro.src}/>
+            {livrosPesquisados.map(livro => (
+                <Resultado key={livro.id}>
+                    <img src={livro.src} alt={`Capa do livro ${livro.nome}`} />
                     <p>{livro.nome}</p>
                 </Resultado>
             ))}
