@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.js": "/alura-books-react/static/js/main.6d3018c0.js",
+    "static/js/453.3a2679d2.chunk.js": "/alura-books-react/static/js/453.3a2679d2.chunk.js",
+    "static/media/livro.png": "/alura-books-react/static/media/livro.08cebf2371097b2d91cd.png",
+    "static/media/sacola.svg": "/alura-books-react/static/media/sacola.a1f2af1cb32c08ae75c7b23485161cbe.svg",
+    "static/media/perfil.svg": "/alura-books-react/static/media/perfil.d459471fbeda60d7f2a433b0f6b660de.svg",
+    "index.html": "/alura-books-react/index.html",
+    "static/media/logo.svg": "/alura-books-react/static/media/logo.9c54b187c810fdc3ecca29269446898f.svg",
+    "main.6d3018c0.js.map": "/alura-books-react/static/js/main.6d3018c0.js.map",
+    "453.3a2679d2.chunk.js.map": "/alura-books-react/static/js/453.3a2679d2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.6d3018c0.js"
+  ]
+}
