@@ -1,2 +1,0 @@
-# alura-books-react
-
