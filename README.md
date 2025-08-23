@@ -33,7 +33,7 @@ Atualmente o projeto é apenas **front-end**, sem integração com back-end ou A
 
 ## 🚀 Demonstração
 
-https://lucasmb21.github.io/alura-books-react/
+📍 **[Acesse o projeto aqui](https://lucasmb21.github.io/alura-books-react/)**
 
 ---
 
